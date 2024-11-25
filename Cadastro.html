@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Opinião</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Entre em Contato Conosco</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="cadastro">
+        <h2>Cadastre-se e Envie Sua Opinião</h2>
+
+        <!-- Formulário de Cadastro -->
+        <section class="form-container">
+            <h3>Cadastro</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="interesse">Interesse no Grupo:</label>
+                    <select id="interesse" name="interesse">
+                        <option value="informacoes">Quero mais informações</option>
+                        <option value="participar">Quero participar</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enviar Cadastro</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Formulário de Feedback -->
+        <section class="form-container">
+            <h3>Deixe sua Opinião</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="opiniao">Sua opinião:</label>
+                    <textarea id="opiniao" name="opiniao" rows="4" placeholder="O que podemos melhorar?" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Enviar Opinião</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Grupo de Exposição. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
